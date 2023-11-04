@@ -18,7 +18,18 @@ export type Tag = {
   label: string;
 };
 
+export type RawNote = {
+  id: string;
+};
+
+export type RawNoteData = {
+  title: string;
+  markdown: string;
+  tagIds: string[];
+};
+
 function App() {
+  const [notes, setNotes] = useLocalStorage('notes', []);
   return (
     <Container className='my-4'>
       <Routes>

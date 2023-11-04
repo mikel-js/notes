@@ -29,7 +29,8 @@ export type RawNoteData = {
 };
 
 function App() {
-  const [notes, setNotes] = useLocalStorage('notes', []);
+  const [notes, setNotes] = useLocalStorage('NOTES', []);
+  const [tags, setTags] = useLocalStorage('TAGS', []);
   return (
     <Container className='my-4'>
       <Routes>

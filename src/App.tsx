@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import NewNote from './NewNote';
+import useLocalStorage from './useLocalStorage';
 
 export type Note = {
   id: string;

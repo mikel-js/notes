@@ -1,3 +1,3 @@
-const NoteList = () => {
-  <h1>List</h1>;
+export const NoteList = () => {
+  return <h1>List</h1>;
 };

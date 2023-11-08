@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import ReactSelect from 'react-select';
 import { Tag } from './App';
 
-export const NoteList = ({ availableTags: [] }) => {
+type NoteListProps = {
+  availableTags: Tag[];
+};
+
+export const NoteList = ({ availableTags }: NoteListProps) => {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   return (
     <>
